@@ -1,4 +1,4 @@
-﻿package com.fleetops.auth.security;
+package com.fleetops.auth.security;
 
 import com.fleetops.auth.repository.UserRepository;
 import jakarta.servlet.FilterChain;

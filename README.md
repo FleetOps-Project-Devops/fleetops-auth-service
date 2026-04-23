@@ -1,21 +1,21 @@
-﻿# ðŸ” FleetOps Auth Service
+# 🔐 FleetOps Auth Service
 
-The Authentication and Authorization service for the FleetOps E-commerce platform. It handles user registration, login, and JWT token issuance.
+The Authentication and Authorization service for the **FleetOps Vehicle Maintenance Platform**. It handles user registration, login, and JWT token issuance.
 
-## ðŸ› ï¸ Tech Stack
+## 🛠️ Tech Stack
 *   **Framework:** Spring Boot 3.4
 *   **Security:** Spring Security 6
 *   **Database:** PostgreSQL (uses `auth_db`)
 *   **Authentication:** Stateless JWT (HS512)
 *   **Password Hashing:** BCrypt
 
-## ðŸŽ¯ Responsibilities
-*   **User Registration:** Creates new users with the `CUSTOMER` role by default.
+## 🎯 Responsibilities
+*   **User Registration:** Creates new users with the `DRIVER` role by default.
 *   **User Login:** Validates credentials and generates a JWT valid for 24 hours.
-*   **Role Management:** Supports `CUSTOMER` and `ADMIN` roles. The JWT payload includes the user's role, allowing other services to perform stateless authorization.
+*   **Role Management:** Supports `DRIVER`, `MANAGER`, and `ADMIN` roles. The JWT payload includes the user's role, allowing other services to perform stateless authorization.
 *   **Profile Retrieval:** Returns the authenticated user's username.
 
-## ðŸ“¡ API Endpoints
+## 📡 API Endpoints
 
 | Method | Endpoint | Auth Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -23,10 +23,10 @@ The Authentication and Authorization service for the FleetOps E-commerce platfor
 | `POST` | `/auth/login` | No | Authenticate and receive a JWT |
 | `GET` | `/auth/me` | Yes (JWT) | Get the current authenticated user's username |
 
-## ðŸš€ Running Locally
+## 🚀 Running Locally
 
 ### Prerequisites
-*   Java 17+
+*   Java 21
 *   Maven
 *   PostgreSQL running locally (with `auth_db` created)
 
@@ -35,12 +35,11 @@ You must set the `JWT_SECRET` environment variable (must be at least 32 characte
 
 ```bash
 export JWT_SECRET=your-super-secret-key-minimum-32-chars
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
-## ðŸ³ Docker
+## 🐳 Docker
 
 ```bash
 docker build -t fleetops-auth-service:v1.0.0 .
 ```
-

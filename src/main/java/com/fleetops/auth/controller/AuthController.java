@@ -1,4 +1,4 @@
-﻿package com.fleetops.auth.controller;
+package com.fleetops.auth.controller;
 
 import com.fleetops.auth.dto.AuthResponse;
 import com.fleetops.auth.dto.LoginRequest;

@@ -1,4 +1,4 @@
-﻿package com.fleetops.auth.security;
+package com.fleetops.auth.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

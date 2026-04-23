@@ -1,4 +1,4 @@
-﻿package com.fleetops.auth.dto;
+package com.fleetops.auth.dto;
 
 public class LoginRequest {
     private String username;

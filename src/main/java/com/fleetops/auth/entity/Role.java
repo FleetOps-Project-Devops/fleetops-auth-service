@@ -1,4 +1,4 @@
-﻿package com.fleetops.auth.entity;
+package com.fleetops.auth.entity;
 
 public enum Role {
     DRIVER,

@@ -1,4 +1,4 @@
-﻿package com.fleetops.auth;
+package com.fleetops.auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
