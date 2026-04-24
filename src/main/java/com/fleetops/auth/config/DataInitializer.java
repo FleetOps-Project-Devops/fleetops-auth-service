@@ -1,4 +1,4 @@
-﻿package com.fleetops.auth.config;
+package com.fleetops.auth.config;
 
 import com.fleetops.auth.entity.Role;
 import com.fleetops.auth.entity.User;
